@@ -32,4 +32,4 @@ match priority:
             reminder += " that requires immediate attention today!"
 
 # Provide the customized reminder
-print(f"\nReminder: {reminder}")
+print(f"Reminder: {reminder}")
