@@ -11,34 +11,34 @@ print("-" * 30)
 for i in range(1, 11):
     match i:
         case 1:
-            product = number * 1
-            print(f"{number} * 1 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 2:
-            product = number * 2
-            print(f"{number} * 2 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 3:
-            product = number * 3
-            print(f"{number} * 3 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 4:
-            product = number * 4
-            print(f"{number} * 4 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 5:
-            product = number * 5
-            print(f"{number} * 5 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 6:
-            product = number * 6
-            print(f"{number} * 6 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 7:
-            product = number * 7
-            print(f"{number} * 7 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 8:
-            product = number * 8
-            print(f"{number} * 8 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 9:
-            product = number * 9
-            print(f"{number} * 9 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case 10:
-            product = number * 10
-            print(f"{number} * 10 = {product}")
+            product = number * i
+            print(f"{number} * {i} = {product}")
         case _:
             print(f"Unexpected multiplier: {i}")
