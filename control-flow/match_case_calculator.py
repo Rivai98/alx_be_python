@@ -1,22 +1,31 @@
-num1 = int(input("Enter the first number:"))
-num2 = int(input("Enter the second number:"))
-operation = input("Choose the operation (+, -, *, /):")
+# Match Case Calculator
+# This script performs basic arithmetic operations using match-case statements
 
-if operation == "+": 
-    result = num1 + num2 
-    print("The result is",result )
+# Prompt for user input
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Choose the operation (+, -, *, /): ")
 
-elif operation == "-": 
-    result = num1 - num2 
-    print("The result is",result )
-elif operation == "*": 
-    result = num1 * num2 
-    print("The result is",result )
-
-elif operation == "/": 
-    if num2 == 0 : 
-        print("Cannot divide by zero")
-    else :  
-        result = num1 / num2 
+# Perform calculation using Match Case
+match operation:
+    case "+":
+        result = num1 + num2
+        print(f"The result is {result}")
     
-        print("The result is",result )   
+    case "-":
+        result = num1 - num2
+        print(f"The result is {result}")
+    
+    case "*":
+        result = num1 * num2
+        print(f"The result is {result}")
+    
+    case "/":
+        if num2 == 0:
+            print("Error: Division by zero is not allowed!")
+        else:
+            result = num1 / num2
+            print(f"The result is {result}")
+    
+    case _:
+        print("Error: Invalid operation! Please use +, -, *, or /")   
