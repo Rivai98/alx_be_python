@@ -18,7 +18,7 @@ def main():
     """Main function to handle user interaction and temperature conversion."""
     try:
         # Get temperature input from user
-        temp_input = input("Enter the temperature: ")
+        temp_input = input("Enter the temperature to convert:")
         
         # Validate temperature input
         try:
